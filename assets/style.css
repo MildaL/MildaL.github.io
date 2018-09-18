@@ -1,0 +1,813 @@
+/* ICONS */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?2mse4w');
+    src:  url('fonts/icomoon.eot?2mse4w#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?2mse4w') format('truetype'),
+      url('fonts/icomoon.woff?2mse4w') format('woff'),
+      url('fonts/icomoon.svg?2mse4w#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-navigation:before {
+    content: "\e900";
+  }
+  .icon-phone-call:before {
+    content: "\e901";
+  }
+  .icon-place:before {
+    content: "\e902";
+  }
+  .icon-play-button:before {
+    content: "\e903";
+  }
+  .icon-balance:before {
+    content: "\e904";
+  }
+  .icon-connection:before {
+    content: "\e905";
+  }
+  .icon-deal:before {
+    content: "\e906";
+  }
+  .icon-diploma:before {
+    content: "\e907";
+  }
+  .icon-iphone:before {
+    content: "\e908";
+  }
+  .icon-pie-chart:before {
+    content: "\e909";
+  }
+  .icon-quotes:before {
+    content: "\e90a";
+  }
+  .icon-linkedin:before {
+    content: "\e90b";
+  }
+  .icon-youtube:before {
+    content: "\e90c";
+  }
+  .icon-brand:before {
+    content: "\e90c";
+  }
+  .icon-social:before {
+    content: "\e90c";
+  }
+  .icon-twitter:before {
+    content: "\e90d";
+  }
+  .icon-facebook:before {
+    content: "\e90e";
+  }
+  .icon-brand2:before {
+    content: "\e90e";
+  }
+  .icon-social2:before {
+    content: "\e90e";
+  }
+
+/* ICONS END */
+  
+
+
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 940px; 
+    margin: 0 auto; 
+    padding: 70px 0;
+}
+
+.flex_container {
+    display: flex; 
+}
+
+.text_center {
+    text-align: center;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+button {
+    text-decoration: none;
+    border: 1px solid #00e0d0;
+    border-radius: 2px;
+    line-height: 1;
+    padding: 14px 15px;
+    font-size: 15px; 
+    background: none;  
+    color: #00e0d0; 
+    cursor: pointer;
+    font-family: 'Hammersmith One', sans-serif;
+    outline: none;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #00e0d0;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #413D4B;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.dash:after {
+    content: "";
+    display: block;
+    width: 50px; 
+    margin: 20px auto 40px;
+    border-bottom: 2px solid #413D4B; 
+}
+
+
+/* HEADER STYLE */
+.header {
+    position: fixed;
+    background-color: rgba(49, 41, 82, 0.4);
+    box-shadow: 3px 1px 0.99px 0.01px rgba(0, 0, 0, 0.05);
+    right: 0;
+    left: 0;  
+}
+
+.header_container {
+    align-items: center;
+    max-width: 940px;
+    margin: 15px auto;
+}
+
+.header a {
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 13px;
+    margin: 0 13px;
+    transition: 0.4s;
+}
+
+.header a:hover { 
+    color: #00e0d0;
+}
+
+.header .header_container label {
+ font-size: 26px;
+ line-height: 70px;
+ display: none;
+}
+
+#toggle {
+    display: none;
+}
+/* HEADER STYLE END */
+
+
+/* MAIN STYLE */
+/* INTRO style */
+.intro {
+    background:
+    linear-gradient(
+      rgba(49, 41, 82, 0.8), 
+      rgba(49, 41, 82, 0.8)
+      ),
+    url(image/miskas.png);
+    height: 660px;
+    max-width: 100%;
+    background-size: cover; 
+    background-position: center center;
+}
+
+.we_are {
+    color: #ffffff; 
+    justify-content: center;
+    max-width: 769px;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+}
+
+.intro h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.intro h1:after {
+    content: "";
+    display: block;
+    width: 50px;
+    margin: 27px auto;
+    border-bottom: 2px solid #00e0d0;
+}
+
+.intro p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    margin-top: 3px;
+    margin-bottom: 53px;
+}
+
+/* OUR STORY style */
+.about div {
+    width: 50%;
+}
+
+.about img {
+    padding-left: 66px;
+}
+
+.our_story h2{
+    margin-bottom: 28px;
+}
+
+.our_story p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+    font-weight: 300;
+    line-height: 22px; 
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+/* VIDEO styles */
+.video {
+    background:
+    linear-gradient(
+      rgba(49, 41, 82, 0.8), 
+      rgba(49, 41, 82, 0.8)
+      ),
+    url(image/miestas.png);
+    max-width: 100%;
+    height: 550px;;
+}
+
+/* EXPERTISE styles */
+.ex p {
+    font-family: 'Playfair Display', serif;
+    margin-top: 16px;
+    font-weight: 400;
+    color: #413D4B;
+}
+
+.icon_container {
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: calc(100%/3);
+    border-right: 1px solid #ebebeb;
+    padding: 53px 33px 39px 33px;
+}
+
+.icon:nth-child(n+4) {
+    border-top: 1px solid #ebebeb;
+}
+
+.icon:nth-child(3n) {
+    border-right: none;
+}
+
+.icon i {
+    font-size: 4em;
+    margin: 35px;
+    background-image: -webkit-linear-gradient(left, #00D0C2, #449ABF); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, #00D0C2, #449ABF); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, #00D0C2, #449ABF); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, #00D0C2, #449ABF); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, #00D0C2, #449ABF); /* Standard syntax; must be last */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+    font-weight: bold;
+    color: #413D4B;
+    letter-spacing: 0.5px;
+    line-height: 22px; 
+    margin-top: 34px;
+    margin-bottom: 25px;   
+}
+
+.icon p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 22px; 
+}
+
+
+/* TEAM style */
+.team {
+    background:
+    linear-gradient(
+      rgba(49, 41, 82, 0.8), 
+      rgba(49, 41, 82, 0.8)
+      ),
+    url(image/miškas2.png);
+    max-width: 100%;
+    background-position: center;
+    background-size: cover; 
+    color: #F9F9F9;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+.team h2 {
+    color: #ffffff; 
+    margin-bottom: 18px;
+}
+
+h4 {
+    font-weight: 300;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+    line-height: 22px;
+    letter-spacing: 0.5px; 
+}
+
+h4::after {
+    content: "";
+    display: block;
+    width: 50px; 
+    margin: 20px auto 40px;
+    border-bottom: 2px solid #ffffff; 
+}
+
+.members {
+    max-width: 940px; 
+    margin: 0 auto; 
+}
+
+.members li {
+    width: 23%;
+}
+
+.member {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.member p:first-child {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.member.last:last-child {
+    margin-right: 0;
+}
+
+.member img {
+    max-width: 100%;
+    display: block;
+}
+.member figcaption {
+    border: 1px solid #696969;
+    padding: 18px 0;
+    line-height: 22px;
+}
+
+.become p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* OUR WORKS style */
+.our_works a {
+    line-height: 26px; 
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.work_image {
+    flex-wrap: wrap;
+}
+
+.work_image li {
+    width: calc(100%/6);
+}
+
+.work_image img {
+    height: 200px;
+    max-width: 100%;
+    display: block;
+}
+
+.load_more {
+    text-align: center;
+}
+
+/* QOUTE style */
+.quote {
+    background:
+    linear-gradient(
+      rgba(49, 41, 82, 0.8), 
+      rgba(49, 41, 82, 0.8)
+      ),
+    url(image/miskas3.png);
+    background-size: cover;
+    background-position: center; 
+    align-content: center;
+    max-width: 100%;
+}
+
+.opinion {
+    flex-direction: column;
+}
+
+.icon-quotes {
+    color: #ffffff;
+    font-size: 3em;
+}
+
+.quote .opinion h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 44px;
+    font-weight: 200;
+}
+
+.people {
+    flex-direction: column;
+}
+
+.people h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 11px;
+}
+
+.people p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #F9F9F9;
+    font-size: 13px;
+    letter-spacing: 1px; 
+}
+
+/* CONTACT style */
+.contact > div {
+    width: 50%;
+}
+
+.good_news {
+    margin-right: 100px;
+}
+
+.good_news h2 {
+    margin-bottom: 35px;
+}
+
+.input_container input{
+    padding: 17px 0 17px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.message input{
+    padding-bottom: 194px;
+}
+
+.happy_client h2 {
+    margin-bottom: 20px;
+}
+
+.clients {
+    flex-wrap: wrap;
+}
+
+.clients li {
+    width: 50%;
+}
+
+.client {
+    padding-right: 50px;
+}
+
+.client img {
+    width: 100%;
+    display: block;
+}
+
+/* MAIN STYLE END */
+
+/* FOOTER STYLE START */
+.footer {
+    background:
+    linear-gradient(
+      rgba(49, 41, 82, 0.8), 
+      rgba(49, 41, 82, 0.8)
+      ),
+    url(image/stalas.png);
+    background-size: cover;
+    max-width: 100%;
+    background-position: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 70px;
+}
+
+.footer_text > div {
+    width: calc(100%/3);
+}
+
+.footer_text p {
+    margin-top: 25px;
+    line-height: 26px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.tajam {
+    margin-right: 35px;
+}
+
+.adress {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-right: 35px;
+}
+
+.phone {
+    margin-top: 12px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn button {
+    border-radius: 50px;
+    border-color: #ffffff;
+    color: #ffffff;
+    margin-right: 9px;
+    margin-top: 27px;
+    outline: none;
+}
+
+.btn button:hover {
+    border-radius: 50px; 
+    color: #ffffff;
+    background-color: #00e0d0;
+    border-color: #00e0d0;
+}
+.footer h6 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 39px;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.subscribe input {
+    background: transparent;
+    border: 1px solid #ffffff;
+    margin-right: 10px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.subscribe ::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.subscribe a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    font-size: 1.5em;
+    padding: 10px 22px;
+    align-content: center;
+    transition: 0.4s;
+}
+
+.subscribe a:hover {
+    background-color: #00e0d0;
+}
+
+.help {
+    padding: 0;
+    text-decoration: none; 
+    font-size: 13px;
+}
+
+.help2 a {
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0 13px;
+    transition: 0.4s;
+}
+
+.help2 a:hover {
+    color: #00e0d0;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    .intro {
+        padding: 0 20px;
+    }
+
+    .about div:first-child {
+        padding: 0 15px;
+    }
+
+    .our_story {
+        padding-right: 40px;
+    }
+
+    .icon_container .icon {
+        width: 50%;
+        border-right: 1px solid #ebebeb;
+    }
+
+    .icon:nth-child(n+3) {
+        border-top: 1px solid #ebebeb;
+    }
+
+    .members { 
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .members li {
+        width: 48%;
+        padding-top: 15px;
+    }
+
+    .our_works .container {
+        margin: 20px;
+    }
+
+    .work_image ul {
+        flex-wrap: wrap;
+    }
+
+    .work_image li {
+        width: 25%;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    .contact div {
+        width: 100%;
+    }
+
+    .good_news {
+        margin: 20px;
+        padding-bottom: 65px;
+    }
+
+    .happy_client {
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+    .header {
+        background-color: rgb(49, 41, 82);
+    }
+
+    .header .header_container label {
+        display: block;
+        cursor: pointer;
+        margin: 20px;
+        color: #ffffff;
+    }
+
+    .header_container .menu {
+        display: block;
+        text-align: center;
+        display: none;
+    }
+
+    .menu li {
+        margin: 20px;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .about div {
+        width: 100%;
+    }
+
+    .our_story {
+        margin: 30px 66px;
+    }
+
+    .expertise .icon {
+        width: auto;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .expertise .icon:last-child {
+        border-bottom: none;
+    }
+
+    .members li {
+        width: auto;
+    }
+
+    .work_image li {
+        width: 50%;
+    }
+
+    .footer_text {
+        flex-wrap: wrap;
+    }
+
+    .footer_text > div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .help {
+        flex-wrap: wrap;
+    }
+
+    .help div {
+        padding: 20px 10px;
+    }
+}
